@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "GW9KvCFHjHp6bWPTPohnuWohxspoQzZfHT55lP1G8DHrqUqEgc7kcjDGyLplRkKRNn7HQoeGhz+716f9FJVRSA==",
+  "dgSpecHash": "B9XsZ49PynxclzTkpXiHH4D1LAPL2mAje2Rka3Wix9egI7GNCLHKhllZKdfjrd99UMJkSTxe+RCSwvsMYEOxHA==",
   "success": true,
   "projectFilePath": "D:\\Programing\\AppJobSearch\\JobSearch.App\\JobSearch.App.iOS\\JobSearch.App.iOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\willi\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\willi\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
   ],

@@ -1,0 +1,17 @@
+D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App\bin\Debug\netstandard2.0\JobSearch.App.deps.json
+D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App\bin\Debug\netstandard2.0\JobSearch.App.dll
+D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App\bin\Debug\netstandard2.0\ref\JobSearch.App.dll
+D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App\bin\Debug\netstandard2.0\JobSearch.App.pdb
+D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App\bin\Debug\netstandard2.0\JobSearch.Domain.dll
+D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App\bin\Debug\netstandard2.0\JobSearch.Domain.pdb
+D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App\obj\Debug\netstandard2.0\JobSearch.App.csprojAssemblyReference.cache
+D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App\obj\Debug\netstandard2.0\JobSearch.App.AssemblyInfoInputs.cache
+D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App\obj\Debug\netstandard2.0\JobSearch.App.AssemblyInfo.cs
+D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App\obj\Debug\netstandard2.0\JobSearch.App.csproj.CoreCompileInputs.cache
+D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App\obj\Debug\netstandard2.0\JobSearch.App.csproj.CopyComplete
+D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App\obj\Debug\netstandard2.0\JobSearch.App.dll
+D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App\obj\Debug\netstandard2.0\ref\JobSearch.App.dll
+D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App\obj\Debug\netstandard2.0\JobSearch.App.pdb

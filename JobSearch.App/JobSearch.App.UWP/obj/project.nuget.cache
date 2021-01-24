@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "OX+tHZnpbWg8BSX1+yC5F/0w79csPbztwVQUFPdwoWFZgL1aSBaS1cfrcW6Yf7zRiPPVHminn7SpGdFnbf/OQg==",
+  "dgSpecHash": "TylnDYjrp7I44Yv/4R17L7zqKyvoU7x/IA0kBdXgYz2dYgl/Kzt0DZ+Ah+g3Uifbg1w/T4+WwPUUE/AsKOTAYg==",
   "success": true,
   "projectFilePath": "D:\\Programing\\AppJobSearch\\JobSearch.App\\JobSearch.App.UWP\\JobSearch.App.UWP.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,7 @@
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.net.native.sharedlibrary\\2.2.7-rel-28605-00\\runtime.win10-x86.microsoft.net.native.sharedlibrary.2.2.7-rel-28605-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\\2.2.10\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk.2.2.10.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.2.10\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.2.10.nupkg.sha512",
+    "C:\\Users\\willi\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\win2d.uwp\\1.20.0\\win2d.uwp.1.20.0.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"

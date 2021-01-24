@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vZZjBJ9APXuiRZGMlalTLNqAiyMVudxUhZ3Ld7Pw/ZULqZ/XQZI5gg4JxW9gbvk3eKbWZfcB1tcUm4jEbF97Pw==",
+  "dgSpecHash": "5tHvJVUDevHgnZ+bSWZsr6ZR8mJkpzjrmq1/ywTgf3YDPjMUFRr8PqWjpyuG815O/nD4H0ip8sa5Hdwk9O/x9A==",
   "success": true,
   "projectFilePath": "D:\\Programing\\AppJobSearch\\JobSearch.API\\JobSearch.API.csproj",
   "expectedPackageFiles": [
@@ -34,7 +34,7 @@
     "C:\\Users\\willi\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.2\\sqlitepclraw.lib.e_sqlite3.2.0.2.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.2\\sqlitepclraw.provider.dynamic_cdecl.2.0.2.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\system.collections.immutable\\1.7.1\\system.collections.immutable.1.7.1.nupkg.sha512",
-    "C:\\Users\\willi\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
+    "C:\\Users\\willi\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"

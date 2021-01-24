@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "yzi1EXMxAkb0upw3e8PYZJjPLBOyWuYkceibZa7N/0kJBjA+sf5/MOOgMyvtnCknQrmCM0Bg25VRBGH1+xldZg==",
+  "success": true,
+  "projectFilePath": "D:\\Programing\\AppJobSearch\\JobSearch.Domain\\JobSearch.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\willi\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\willi\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

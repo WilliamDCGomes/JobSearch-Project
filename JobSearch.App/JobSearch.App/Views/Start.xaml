@@ -39,7 +39,10 @@
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
-            <Frame BorderColor="{StaticResource GrayBlue}" HasShadow="False">
+            <Frame BorderColor="{StaticResource GrayBlue}" Padding="15" HasShadow="True" Margin="4">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="GoVisualizer" />
+                </Frame.GestureRecognizers>
                 <Grid RowSpacing="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="3*"/>

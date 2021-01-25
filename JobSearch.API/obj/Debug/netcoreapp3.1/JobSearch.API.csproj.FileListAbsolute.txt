@@ -2,6 +2,7 @@ D:\Programing\AppJobSearch\JobSearch.API\bin\Debug\netcoreapp3.1\appsettings.Dev
 D:\Programing\AppJobSearch\JobSearch.API\bin\Debug\netcoreapp3.1\appsettings.json
 D:\Programing\AppJobSearch\JobSearch.API\bin\Debug\netcoreapp3.1\appsettings.Production.json
 D:\Programing\AppJobSearch\JobSearch.API\bin\Debug\netcoreapp3.1\JobSearch.API.exe
+D:\Programing\AppJobSearch\JobSearch.API\bin\Debug\netcoreapp3.1\Database\JobSearch.db
 D:\Programing\AppJobSearch\JobSearch.API\bin\Debug\netcoreapp3.1\JobSearch.API.deps.json
 D:\Programing\AppJobSearch\JobSearch.API\bin\Debug\netcoreapp3.1\JobSearch.API.runtimeconfig.json
 D:\Programing\AppJobSearch\JobSearch.API\bin\Debug\netcoreapp3.1\JobSearch.API.runtimeconfig.dev.json

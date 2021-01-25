@@ -2,7 +2,7 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <AndroidDesignerPreferredTheme>MainTheme</AndroidDesignerPreferredTheme>
-    <SelectedDevice>pixel_2_q_10_0_-_api_29</SelectedDevice>
+    <SelectedDevice>Motorola one action</SelectedDevice>
     <DefaultDevice>pixel_2_q_10_0_-_api_29</DefaultDevice>
   </PropertyGroup>
 </Project>

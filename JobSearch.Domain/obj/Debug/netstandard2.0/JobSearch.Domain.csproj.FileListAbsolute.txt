@@ -1,12 +1,11 @@
 D:\Programing\AppJobSearch\JobSearch.Domain\bin\Debug\netstandard2.0\JobSearch.Domain.deps.json
 D:\Programing\AppJobSearch\JobSearch.Domain\bin\Debug\netstandard2.0\JobSearch.Domain.dll
 D:\Programing\AppJobSearch\JobSearch.Domain\bin\Debug\netstandard2.0\JobSearch.Domain.pdb
-D:\Programing\AppJobSearch\JobSearch.Domain\obj\Debug\netstandard2.0\JobSearch.Domain.csprojAssemblyReference.cache
+D:\Programing\AppJobSearch\JobSearch.Domain\obj\Debug\netstandard2.0\JobSearch.Domain.Utility.Language.Fields.resources
+D:\Programing\AppJobSearch\JobSearch.Domain\obj\Debug\netstandard2.0\JobSearch.Domain.Utility.Language.Messages.resources
+D:\Programing\AppJobSearch\JobSearch.Domain\obj\Debug\netstandard2.0\JobSearch.Domain.csproj.GenerateResource.cache
 D:\Programing\AppJobSearch\JobSearch.Domain\obj\Debug\netstandard2.0\JobSearch.Domain.AssemblyInfoInputs.cache
 D:\Programing\AppJobSearch\JobSearch.Domain\obj\Debug\netstandard2.0\JobSearch.Domain.AssemblyInfo.cs
 D:\Programing\AppJobSearch\JobSearch.Domain\obj\Debug\netstandard2.0\JobSearch.Domain.csproj.CoreCompileInputs.cache
 D:\Programing\AppJobSearch\JobSearch.Domain\obj\Debug\netstandard2.0\JobSearch.Domain.dll
 D:\Programing\AppJobSearch\JobSearch.Domain\obj\Debug\netstandard2.0\JobSearch.Domain.pdb
-D:\Programing\AppJobSearch\JobSearch.Domain\obj\Debug\netstandard2.0\JobSearch.Domain.Utility.Language.Fields.resources
-D:\Programing\AppJobSearch\JobSearch.Domain\obj\Debug\netstandard2.0\JobSearch.Domain.Utility.Language.Messages.resources
-D:\Programing\AppJobSearch\JobSearch.Domain\obj\Debug\netstandard2.0\JobSearch.Domain.csproj.GenerateResource.cache

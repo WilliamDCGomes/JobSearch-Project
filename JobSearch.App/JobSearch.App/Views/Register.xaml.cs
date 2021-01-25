@@ -21,5 +21,7 @@ namespace JobSearch.App.Views
         {
             Navigation.PopAsync();
         }
+
+        
     }
 }

@@ -10,7 +10,7 @@
                     <ColumnDefinition Width="100"/>
                 </Grid.ColumnDefinitions>
                 <Label Text="Jobsearch" Style="{StaticResource Title}"/>
-                <Button Text="+Add Job" Grid.Column="1" Clicked="GoRegisterJob"/>
+                <Button Text="+Add Job" Grid.Column="1" Clicked="GoRegisterJob" StyleClass="AddButton"/>
             </Grid>
             
             <BoxView HeightRequest="1" Color="#D7CCFF"/>
@@ -24,10 +24,24 @@
                     <RowDefinition />
                 </Grid.RowDefinitions>
                 <Frame StyleClass="EntryFrame" Grid.Row="0" Grid.ColumnSpan="2">
-                    <Entry Placeholder="Pesquisa"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="20"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <ImageButton StyleClass="SearchButton" Clicked="FocusWord"/>
+                        <Entry x:Name="TxtWord" Placeholder="Pesquisa" Grid.Column="1"/>
+                    </Grid>
                 </Frame>
                 <Frame StyleClass="EntryFrame" Grid.Row="1">
-                    <Entry Placeholder="Cidade/Estado"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="20"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <ImageButton StyleClass="PinButton" Clicked="FocusCityState"/>
+                        <Entry x:Name="TxtCityState" Placeholder="Cidade/Estado" Grid.Column="1"/>
+                    </Grid>
                 </Frame>
                 <Button Text="Pesquisar" Grid.Row="1" Grid.Column="1"/>
             </Grid>

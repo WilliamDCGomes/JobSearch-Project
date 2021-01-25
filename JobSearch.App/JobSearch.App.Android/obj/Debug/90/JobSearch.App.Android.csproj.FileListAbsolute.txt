@@ -529,3 +529,4 @@ D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App.Android\obj\Debug\90\stam
 D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App.Android\obj\Debug\90\android\src\crc6444e83f3cb5ac411a\CustomEditorRenderer.java

@@ -4,6 +4,9 @@ jobsearch.app.droid.MainActivity;crc64d5b8b9bafc133fe1.MainActivity
 JobSearch.App.Droid.SplashActivity, JobSearch.App.Android;crc64d5b8b9bafc133fe1.SplashActivity
 JobSearch.App.Droid.SplashActivity;crc64d5b8b9bafc133fe1.SplashActivity
 jobsearch.app.droid.SplashActivity;crc64d5b8b9bafc133fe1.SplashActivity
+JobSearch.App.Droid.Utility.Controls.CustomEditorRenderer, JobSearch.App.Android;crc6444e83f3cb5ac411a.CustomEditorRenderer
+JobSearch.App.Droid.Utility.Controls.CustomEditorRenderer;crc6444e83f3cb5ac411a.CustomEditorRenderer
+jobsearch.app.droid.utility.controls.CustomEditorRenderer;crc6444e83f3cb5ac411a.CustomEditorRenderer
 JobSearch.App.Droid.Utility.Controls.CustomEntryRenderer, JobSearch.App.Android;crc6444e83f3cb5ac411a.CustomEntryRenderer
 JobSearch.App.Droid.Utility.Controls.CustomEntryRenderer;crc6444e83f3cb5ac411a.CustomEntryRenderer
 jobsearch.app.droid.utility.controls.CustomEntryRenderer;crc6444e83f3cb5ac411a.CustomEntryRenderer

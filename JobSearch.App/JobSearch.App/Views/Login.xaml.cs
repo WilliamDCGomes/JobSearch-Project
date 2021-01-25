@@ -21,5 +21,10 @@ namespace JobSearch.App.Views
         {
             Navigation.PushAsync(new Register());
         }
+
+        private void GoStart(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new NavigationPage(new Start());
+        }
     }
 }

@@ -22,7 +22,7 @@
                 <Frame StyleClass="EntryFrame" Grid.Row="1" Grid.ColumnSpan="2">
                     <Entry Placeholder="Senha"/>
                 </Frame>
-                <Button Text="Acessar" HorizontalOptions="FillAndExpand" Grid.Row="2" Grid.Column="0"/>
+                <Button Text="Acessar" Clicked="GoStart" HorizontalOptions="FillAndExpand" Grid.Row="2" Grid.Column="0"/>
                 <Button Text="Cadastrar" Clicked="GoRegister" HorizontalOptions="FillAndExpand" Grid.Row="2" Grid.Column="1"/>
             </Grid>
         </StackLayout>

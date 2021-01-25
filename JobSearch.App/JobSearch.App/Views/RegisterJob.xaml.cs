@@ -24,7 +24,7 @@ namespace JobSearch.App.Views
 
         private void Save(object sender, EventArgs e)
         {
-            DisplayAlert("Salvo", "Vaga salva", "OK");
+            DisplayAlert("Salvo", "Vaga foi cadastrada", "OK");
         }
     }
 }

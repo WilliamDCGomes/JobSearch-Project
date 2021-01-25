@@ -48,8 +48,8 @@
             <Label >
                 <Label.FormattedText>
                     <FormattedString>
-                        <Span Text="2 resultados em " Style="{StaticResource JobTitleLabel}"/>
-                        <Span Text="São Paulo, SP" Style="{StaticResource CompanyCityStateLabel}"/>
+                        <Span Text="2 resultados em " Style="{StaticResource TextPrimary}"/>
+                        <Span Text="São Paulo, SP" Style="{StaticResource TextSecondary}"/>
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
@@ -68,9 +68,9 @@
                         <RowDefinition />
                         <RowDefinition />
                     </Grid.RowDefinitions>
-                    <Label Text="Digital Ocean" Grid.ColumnSpan="2" Style="{StaticResource CompanyCityStateLabel}"/>
-                    <Label Text="Back-End Developer" Grid.Row="1" Style="{StaticResource JobTitleLabel}"/>
-                    <Label Text="São Paulo, SP" Grid.Row="2" Style="{StaticResource CompanyCityStateLabel}"/>
+                    <Label Text="Digital Ocean" Grid.ColumnSpan="2" Style="{StaticResource TextSecondary}"/>
+                    <Label Text="Back-End Developer" Grid.Row="1" Style="{StaticResource TextPrimary}"/>
+                    <Label Text="São Paulo, SP" Grid.Row="2" Style="{StaticResource TextSecondary}"/>
                     <Label Text="Tags" Grid.Row="3"/>
                     <Label Grid.Row="1" Grid.Column="1">
                         <Label.FormattedText>

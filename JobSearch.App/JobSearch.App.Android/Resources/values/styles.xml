@@ -2,9 +2,10 @@
 <resources>
 
   <style name="MainTheme" parent="MainTheme.Base">
-    <item name="colorPrimary">#2196F3</item>
-    <item name="colorPrimaryDark">#1976D2</item>
+    <item name="colorPrimary">#623CEA</item>
+    <item name="colorPrimaryDark">#623CEA</item>
     <item name="colorAccent">#FF4081</item>
+    <item name="android:windowLightStatusBar">false</item>
   </style>
   
   <style name="MainTheme.Splash" parent="Theme.AppCompat.Light.NoActionBar">

@@ -60,11 +60,14 @@
                 <Setter Property="HeightRequest" Value="35" />
                 <Setter Property="VerticalOptions" Value="Start" />
             </Style>
-            <Style TargetType="Label" x:Key="CompanyCityStateLabel" BasedOn="{StaticResource BaseLabel}">
+            <Style TargetType="Label" x:Key="TextSecondary" BasedOn="{StaticResource BaseLabel}">
                 <Setter Property="TextColor" Value="{StaticResource Gray}" />
             </Style>
-            <Style TargetType="Label" x:Key="JobTitleLabel" BasedOn="{StaticResource BaseLabel}">
+            <Style TargetType="Label" x:Key="TextPrimary" BasedOn="{StaticResource BaseLabel}">
                 <Setter Property="TextColor" Value="{StaticResource DarkGray}" />
+            </Style>
+            <Style TargetType="Label" x:Key="TitlePrimary" BasedOn="{StaticResource BaseLabel}">
+                <Setter Property="TextColor" Value="{StaticResource Purple}" />
             </Style>
             <Style TargetType="Label" x:Key="MoneyLabel" BasedOn="{StaticResource BaseLabel}">
                 <Setter Property="TextColor" Value="{StaticResource Purple}" />

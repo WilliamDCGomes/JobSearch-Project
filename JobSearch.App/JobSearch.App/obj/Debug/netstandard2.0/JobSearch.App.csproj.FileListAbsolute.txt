@@ -6,7 +6,6 @@ D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App\bin\Debug\netstandard2.0\
 D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App\bin\Debug\netstandard2.0\JobSearch.Domain.pdb
 D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App\obj\Debug\netstandard2.0\JobSearch.App.csprojAssemblyReference.cache
 D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App\obj\Debug\netstandard2.0\App.xaml.g.cs
-D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App\obj\Debug\netstandard2.0\JobSearch.App.AssemblyInfoInputs.cache
 D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App\obj\Debug\netstandard2.0\JobSearch.App.AssemblyInfo.cs
 D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App\obj\Debug\netstandard2.0\JobSearch.App.csproj.CoreCompileInputs.cache
@@ -15,3 +14,4 @@ D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App\obj\Debug\netstandard2.0\
 D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App\obj\Debug\netstandard2.0\JobSearch.App.dll
 D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App\obj\Debug\netstandard2.0\ref\JobSearch.App.dll
 D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App\obj\Debug\netstandard2.0\JobSearch.App.pdb
+D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App\obj\Debug\netstandard2.0\Views\Login.xaml.g.cs

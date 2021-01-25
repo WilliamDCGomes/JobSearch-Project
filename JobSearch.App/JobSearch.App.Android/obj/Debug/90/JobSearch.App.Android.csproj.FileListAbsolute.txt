@@ -504,3 +504,4 @@ D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App.Android\obj\Debug\90\res\
 D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App.Android\obj\Debug\90\res\drawable-xxxhdpi\logo.png
 D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App.Android\obj\Debug\90\res\drawable\splashscreen.xml
 D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App.Android\obj\Debug\90\android\src\crc64d5b8b9bafc133fe1\SplashActivity.java
+D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App.Android\obj\Debug\90\android\src\crc6444e83f3cb5ac411a\CustomEntryRenderer.java

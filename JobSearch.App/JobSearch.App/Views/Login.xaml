@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             NavigationPage.HasNavigationBar="False"
              x:Class="JobSearch.App.Views.Login">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Jobsearch" />
+            <Label Text="Jobsearch" Style="{StaticResource Title}"/>
             <BoxView HeightRequest="1" Color="#D7CCFF"/>
             <Grid VerticalOptions="CenterAndExpand">
                 <Grid.ColumnDefinitions>
@@ -17,10 +16,14 @@
                     <RowDefinition />
                     <RowDefinition />
                 </Grid.RowDefinitions>
-                <Entry Placeholder="E-mail" Grid.Row="0" Grid.ColumnSpan="2"/>
-                <Entry Placeholder="Senha" Grid.Row="1" Grid.ColumnSpan="2"/>
+                <Frame StyleClass="EntryFrame" Grid.Row="0" Grid.ColumnSpan="2">
+                    <Entry Placeholder="E-mail"/>
+                </Frame>
+                <Frame StyleClass="EntryFrame" Grid.Row="1" Grid.ColumnSpan="2">
+                    <Entry Placeholder="Senha"/>
+                </Frame>
                 <Button Text="Acessar" HorizontalOptions="FillAndExpand" Grid.Row="2" Grid.Column="0"/>
-                <Button Text="Cadastrar" HorizontalOptions="FillAndExpand" Grid.Row="2" Grid.Column="1"/>
+                <Button Text="Cadastrar" Clicked="GoRegister" HorizontalOptions="FillAndExpand" Grid.Row="2" Grid.Column="1"/>
             </Grid>
         </StackLayout>
     </ContentPage.Content>

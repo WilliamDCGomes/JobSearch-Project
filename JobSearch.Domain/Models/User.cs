@@ -9,13 +9,19 @@ namespace JobSearch.Domain.Models
     {
         [Key]
         public int Id { get; set; }
-        [Required]
+        [Display(Name = "Name", ResourceType = typeof(JobSearch.Domain.Utility.Language.Fields))]
+        [Required(ErrorMessageResourceType = typeof(JobSearch.Domain.Utility.Language.Messages), ErrorMessageResourceName = "MSG_E001")]
+        [MinLength(3, ErrorMessageResourceType = typeof(JobSearch.Domain.Utility.Language.Messages), ErrorMessageResourceName = "MSG_E003")]
         public string Nome { get; set; }
-        [Required]
-        [EmailAddress]
+
+        [Display(Name = "Email", ResourceType = typeof(JobSearch.Domain.Utility.Language.Fields))]
+        [Required(ErrorMessageResourceType = typeof(JobSearch.Domain.Utility.Language.Messages), ErrorMessageResourceName = "MSG_E001")]
+        [EmailAddress(ErrorMessageResourceType = typeof(JobSearch.Domain.Utility.Language.Messages), ErrorMessageResourceName = "MSG_E002")]
         public string Email { get; set; }
-        [Required]
-        [MinLength(6)]
+
+        [Display(Name = "Password", ResourceType = typeof(JobSearch.Domain.Utility.Language.Fields))]
+        [Required(ErrorMessageResourceType = typeof(JobSearch.Domain.Utility.Language.Messages), ErrorMessageResourceName = "MSG_E001")]
+        [MinLength(6, ErrorMessageResourceType = typeof(JobSearch.Domain.Utility.Language.Messages), ErrorMessageResourceName = "MSG_E003")]
         public string Password { get; set; }
     }
 }

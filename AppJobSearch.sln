@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{02178F56-B96
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APP", "APP", "{EF083036-D9F5-4B50-B810-BEB48A4EE07A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobSearch.API", "JobSearch.API\JobSearch.API.csproj", "{4AF99F8C-FC2C-4A80-93D7-1CBB3CED06A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobSearch.API", "JobSearch.API\JobSearch.API.csproj", "{4AF99F8C-FC2C-4A80-93D7-1CBB3CED06A4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobSearch.App.UWP", "JobSearch.App\JobSearch.App.UWP\JobSearch.App.UWP.csproj", "{51E676B3-F22D-4432-AF1E-35F0F608B710}"
 EndProject
@@ -15,11 +15,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobSearch.App.Android", "Jo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobSearch.App.iOS", "JobSearch.App\JobSearch.App.iOS\JobSearch.App.iOS.csproj", "{AE24E07E-4A66-4E7A-8EFE-B4C109E655A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobSearch.App", "JobSearch.App\JobSearch.App\JobSearch.App.csproj", "{60F6FCF9-079A-43C4-84A9-921DCCE81049}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobSearch.App", "JobSearch.App\JobSearch.App\JobSearch.App.csproj", "{60F6FCF9-079A-43C4-84A9-921DCCE81049}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{8205B90E-C5D0-42CF-A55B-FC0F3B652AE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobSearch.Domain", "JobSearch.Domain\JobSearch.Domain.csproj", "{2CC0BCC0-FACC-4E84-A043-6E8CFDCEB38D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobSearch.Domain", "JobSearch.Domain\JobSearch.Domain.csproj", "{2CC0BCC0-FACC-4E84-A043-6E8CFDCEB38D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

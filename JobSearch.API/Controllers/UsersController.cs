@@ -28,7 +28,7 @@ namespace JobSearch.API.Controllers
             return new JsonResult(userDb);
         }
         [HttpPost]
-        `public IActionResult AddUser(User user)
+        public IActionResult AddUser(User user)
         {
             _data.Users.Add(user);
             _data.SaveChanges();

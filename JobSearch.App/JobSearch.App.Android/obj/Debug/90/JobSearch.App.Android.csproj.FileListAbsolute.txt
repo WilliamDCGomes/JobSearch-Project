@@ -560,3 +560,9 @@ D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App.Android\obj\Debug\90\andr
 D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App.Android\obj\Debug\90\android\assets\System.Threading.dll
 D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App.Android\obj\Debug\90\android\src\crc6460d2b0234674b457\PopupPageRenderer.java
 D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App.Android\obj\Debug\90\android\src\crc647a155f775cb6802f\RgGestureDetectorListener.java
+D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App.Android\obj\Debug\90\res\drawable-hdpi\logout.png
+D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App.Android\obj\Debug\90\res\drawable-ldpi\logout.png
+D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App.Android\obj\Debug\90\res\drawable-mdpi\logout.png
+D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App.Android\obj\Debug\90\res\drawable-xhdpi\logout.png
+D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App.Android\obj\Debug\90\res\drawable-xxhdpi\logout.png
+D:\Programing\AppJobSearch\JobSearch.App\JobSearch.App.Android\obj\Debug\90\res\drawable-xxxhdpi\logout.png

@@ -36,5 +36,12 @@ namespace JobSearch.App.Views
         {
             TxtCityState.Focus();
         }
+
+        private void Logout(object sender, EventArgs e)
+        {
+            App.Current.Properties.Remove("User");
+            App.Current.SavePropertiesAsync();
+            App.Current.MainPage = new Login();
+        }
     }
 }

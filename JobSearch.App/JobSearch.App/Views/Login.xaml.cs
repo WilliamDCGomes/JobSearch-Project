@@ -38,7 +38,13 @@ namespace JobSearch.App.Views
             ResponseService<User> responseService = await _service.GetUser(email, password);
             if (!responseService.IsSucess)
             {
-                await DisplayAlert("Erro!", "Nenhum usuário encontrado!", "OK");
+                if (responseService.StatusCode == 404)
+                {
+                    await DisplayAlert("Erro!", "Nenhum usuário encontrado!", "OK");
+                }
+                else{
+                    await DisplayAlert("Erro!", "Ops! JobSearch foi pras cucuias...", "OK");
+                }
             }
             else
             {

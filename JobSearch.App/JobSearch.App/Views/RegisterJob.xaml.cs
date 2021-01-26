@@ -33,12 +33,23 @@ namespace JobSearch.App.Views
         {
             TxtMessages.Text = String.Empty;
             User user = JsonConvert.DeserializeObject<User>(App.Current.Properties["User"].ToString());
+            double salaryI=0;
+            double salaryF=0;
+            if (TxtInitialSalary.Text != null)
+            {
+                salaryI = Double.Parse(TxtInitialSalary.Text.Replace(",", "."));
+            }
+            if(TxtFinalSalary.Text != null)
+            {
+                salaryF = Double.Parse(TxtFinalSalary.Text.Replace(",", "."));
+            }
             Job job = new Job()
             {
                 Company = TxtCompany.Text,
                 JobTitle = TxtJobTitle.Text,
                 CityState = TxtCityState.Text,
-                Salary = Double.Parse(TxtSalary.Text.Replace(",", ".")),
+                InitialSalary = salaryI,
+                FinalSalary = salaryF,
                 ContractType = (RBCLR.IsChecked) ? "CLT" : "PJ",
                 TecnologyTools = TxtTecnologyTools.Text,
                 CompanyDescription = TxtCompanyDescription.Text,
@@ -68,15 +79,14 @@ namespace JobSearch.App.Views
                 {
                     await DisplayAlert("Erro!", "Ops! JobSearch foi pras cucuias...", "OK");
                 }
+                await Navigation.PopAllPopupAsync();
             }
             else
             {
-                App.Current.Properties.Add("User", JsonConvert.SerializeObject(responseService.Data));
-                await App.Current.SavePropertiesAsync();
-                App.Current.MainPage = new NavigationPage(new Start());
+                await Navigation.PopAllPopupAsync();
+                await DisplayAlert("Vaga cadastrada!", "Vaga cadastrada com sucesso", "OK");
+                await Navigation.PopAsync();
             }
-            await Navigation.PopAllPopupAsync();
-            await Navigation.PopAsync();
         }
     }
 }

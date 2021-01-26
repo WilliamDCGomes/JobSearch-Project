@@ -9,3 +9,4 @@ D:\Programing\AppJobSearch\JobSearch.Domain\obj\Debug\netstandard2.0\JobSearch.D
 D:\Programing\AppJobSearch\JobSearch.Domain\obj\Debug\netstandard2.0\JobSearch.Domain.csproj.CoreCompileInputs.cache
 D:\Programing\AppJobSearch\JobSearch.Domain\obj\Debug\netstandard2.0\JobSearch.Domain.dll
 D:\Programing\AppJobSearch\JobSearch.Domain\obj\Debug\netstandard2.0\JobSearch.Domain.pdb
+D:\Programing\AppJobSearch\JobSearch.Domain\obj\Debug\netstandard2.0\JobSearch.Domain.csprojAssemblyReference.cache

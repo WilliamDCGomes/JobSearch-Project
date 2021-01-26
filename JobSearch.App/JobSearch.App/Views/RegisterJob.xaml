@@ -33,7 +33,10 @@
                         <Entry x:Name="TxtCityState" Placeholder="Cidade/UF"/>
                     </Frame>
                     <Frame StyleClass="EntryFrame">
-                        <Entry x:Name="TxtSalary" Placeholder="Salário (reais)"/>
+                        <Entry x:Name="TxtInitialSalary" Keyboard="Numeric" Placeholder="Piso Salarial (reais)"/>
+                    </Frame>
+                    <Frame StyleClass="EntryFrame">
+                        <Entry x:Name="TxtFinalSalary" Keyboard="Numeric" Placeholder="Teto Salarial (reais)"/>
                     </Frame>
                     <Frame StyleClass="EntryFrame">
                         <StackLayout Orientation="Horizontal">

@@ -8,6 +8,8 @@ public class MonoPackageManager_Resources {
 		"JobSearch.App.dll",
 		"Newtonsoft.Json.Bson.dll",
 		"Newtonsoft.Json.dll",
+		"Rg.Plugins.Popup.dll",
+		"Rg.Plugins.Popup.Droid.dll",
 		"System.Net.Http.Formatting.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Core.Runtime.dll",

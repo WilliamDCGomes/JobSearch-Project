@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "bb7LZl0gOn6MSfauQNG2L+vVRMjBfqqPOTyTe3MUFjxBxviYq3Myt6Mbl1z7E7QuFLAcfWChHaRUzmKjK4V+sA==",
+  "dgSpecHash": "ioimf8lWypRx7/Fm9h6ndNKjSLPhO1ANM8+sbAhXldsQtjZhcru/kZGFZ7mgBJ4eajMTfRsOxJ2VGxEYsEsZpQ==",
   "success": true,
   "projectFilePath": "D:\\Programing\\AppJobSearch\\JobSearch.App\\JobSearch.App.Android\\JobSearch.App.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\willi\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\newtonsoft.json.bson\\1.0.1\\newtonsoft.json.bson.1.0.1.nupkg.sha512",
+    "C:\\Users\\willi\\.nuget\\packages\\rg.plugins.popup\\1.2.0.223\\rg.plugins.popup.1.2.0.223.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.runtime\\1.1.1.3\\xamarin.android.arch.core.runtime.1.1.1.3.nupkg.sha512",

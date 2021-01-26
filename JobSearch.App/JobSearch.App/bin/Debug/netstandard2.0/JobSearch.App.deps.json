@@ -13,6 +13,7 @@
           "Microsoft.AspNet.WebApi.Client": "5.2.7",
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "12.0.3",
+          "Rg.Plugins.Popup": "1.2.0.223",
           "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.8.0.1451"
         },
@@ -55,6 +56,17 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.1.20722"
+          }
+        }
+      },
+      "Rg.Plugins.Popup/1.2.0.223": {
+        "dependencies": {
+          "Xamarin.Forms": "4.8.0.1451"
+        },
+        "runtime": {
+          "lib/netstandard1.0/Rg.Plugins.Popup.dll": {
+            "assemblyVersion": "1.2.0.223",
+            "fileVersion": "1.2.0.223"
           }
         }
       },
@@ -151,6 +163,13 @@
       "sha512": "sha512-5PYT/IqQ+UK31AmZiSS102R6EsTo+LGTSI8bp7WAUqDKaF4wHXD8U9u4WxTI1vc64tYi++8p3dk3WWNqPFgldw==",
       "path": "newtonsoft.json.bson/1.0.1",
       "hashPath": "newtonsoft.json.bson.1.0.1.nupkg.sha512"
+    },
+    "Rg.Plugins.Popup/1.2.0.223": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0ruzj7EedYRUhhsk327z7ymaHzf9E/n6Slg2ZJfOYqtZ14tX1dtWbyNRSmGEnWxLyN1qSq4Od4U6vYupHRpdtw==",
+      "path": "rg.plugins.popup/1.2.0.223",
+      "hashPath": "rg.plugins.popup.1.2.0.223.nupkg.sha512"
     },
     "System.ComponentModel.Annotations/4.7.0": {
       "type": "package",

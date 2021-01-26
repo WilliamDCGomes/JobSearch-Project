@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "sD+pUAC/Z2eMDyhVfKiSYJajaxF5cqpWFjBywFSm9UGnMfmnxqGLUVbfwfhqcxv6CqduUThw2YlbwD0SHlBfaw==",
+  "dgSpecHash": "9pQkDfzZGV8HyC6yqBAZjIK6LxcY1YV004kv3mmNJpFfJBti0HQgD+uL8r+mPzDjXJBzkPlhcWsGeQH6zhx+VQ==",
   "success": true,
   "projectFilePath": "D:\\Programing\\AppJobSearch\\JobSearch.App\\JobSearch.App.iOS\\JobSearch.App.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\willi\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\newtonsoft.json.bson\\1.0.1\\newtonsoft.json.bson.1.0.1.nupkg.sha512",
+    "C:\\Users\\willi\\.nuget\\packages\\rg.plugins.popup\\1.2.0.223\\rg.plugins.popup.1.2.0.223.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
     "C:\\Users\\willi\\.nuget\\packages\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"

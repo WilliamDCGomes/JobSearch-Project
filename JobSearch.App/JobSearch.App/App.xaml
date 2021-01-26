@@ -109,6 +109,17 @@
                 <Setter Property="HorizontalOptions" Value="End" />
                 <Setter Property="Padding" Value="0" />
             </Style>
+            <Style TargetType="Label" x:Key="LabelRaddioButton">
+                <Setter Property="TextColor" Value="{StaticResource DarkGrayBlue}" />
+                <Setter Property="FontFamily" Value="Montserrat" />
+                <Setter Property="FontSize" Value="12" />
+            </Style>
+            <Style TargetType="Label" x:Key="LabelEntry">
+                <Setter Property="TextColor" Value="{StaticResource DarkGrayBlue}" />
+                <Setter Property="FontFamily" Value="Montserrat" />
+                <Setter Property="FontSize" Value="12" />
+                <Setter Property="Padding" Value="5, 11" />
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

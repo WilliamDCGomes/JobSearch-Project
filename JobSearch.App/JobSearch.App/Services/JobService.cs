@@ -1,4 +1,6 @@
-﻿using JobSearch.Domain.Models;
+﻿using JobSearch.App.Models;
+using JobSearch.Domain.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
@@ -7,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace JobSearch.App.Services
 {
-    public class JobSevice : Service
+    public class JobService : Service
     {
         public async Task<IEnumerable<Job>> GetJobs(string word, string cityState, int numberOfPages = 1)
         {
@@ -29,18 +31,23 @@ namespace JobSearch.App.Services
             }
             return job;
         }
-        public async Task<Job> AddJob(Job job)
+        public async Task<ResponseService<Job>> AddJob(Job job)
         {
-            HttpResponseMessage response = await _client.PostAsJsonAsync($"{BaseApiUrl}/api/Jobs/", job);
+            HttpResponseMessage response = await _client.PostAsJsonAsync($"{BaseApiUrl}/api/Jobs", job);
+            ResponseService<Job> responseService = new ResponseService<Job>();
+            responseService.IsSucess = response.IsSuccessStatusCode;
+            responseService.StatusCode = (int)response.StatusCode;
             if (response.IsSuccessStatusCode)
             {
-                job = await response.Content.ReadAsAsync<Job>();
+                responseService.Data = await response.Content.ReadAsAsync<Job>();
             }
             else
             {
-                job = null;
+                var problemResponse = await response.Content.ReadAsStringAsync();
+                var errors = JsonConvert.DeserializeObject<ResponseService<Job>>(problemResponse);
+                responseService.Errors = errors.Errors;
             }
-            return job;
+            return responseService;
         }
     }
 }

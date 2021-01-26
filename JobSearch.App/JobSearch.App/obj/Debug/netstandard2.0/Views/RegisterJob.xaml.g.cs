@@ -35,7 +35,7 @@ namespace JobSearch.App.Views {
         private global::Xamarin.Forms.Entry TxtFinalSalary;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.RadioButton RBCLR;
+        private global::Xamarin.Forms.RadioButton RBCLT;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.RadioButton RBPJ;
@@ -44,13 +44,13 @@ namespace JobSearch.App.Views {
         private global::Xamarin.Forms.Entry TxtTecnologyTools;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Editor TxtCompanyDescription;
+        private global::Xamarin.Forms.Entry TxtCompanyDescription;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Editor TxtJobDescription;
+        private global::Xamarin.Forms.Entry TxtJobDescription;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Editor TxtBenefits;
+        private global::Xamarin.Forms.Entry TxtBenefits;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Entry TxtInterestedSendEmailTo;
@@ -64,12 +64,12 @@ namespace JobSearch.App.Views {
             TxtCityState = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "TxtCityState");
             TxtInitialSalary = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "TxtInitialSalary");
             TxtFinalSalary = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "TxtFinalSalary");
-            RBCLR = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.RadioButton>(this, "RBCLR");
+            RBCLT = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.RadioButton>(this, "RBCLT");
             RBPJ = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.RadioButton>(this, "RBPJ");
             TxtTecnologyTools = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "TxtTecnologyTools");
-            TxtCompanyDescription = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Editor>(this, "TxtCompanyDescription");
-            TxtJobDescription = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Editor>(this, "TxtJobDescription");
-            TxtBenefits = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Editor>(this, "TxtBenefits");
+            TxtCompanyDescription = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "TxtCompanyDescription");
+            TxtJobDescription = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "TxtJobDescription");
+            TxtBenefits = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "TxtBenefits");
             TxtInterestedSendEmailTo = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "TxtInterestedSendEmailTo");
         }
     }

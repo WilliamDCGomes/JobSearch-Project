@@ -14,37 +14,45 @@ namespace JobSearch.App.Services
         public async Task<ResponseService<User>> GetUser(string email, string password)
         {
             HttpResponseMessage response = await _client.GetAsync($"{BaseApiUrl}/api/Users?email={email}&password={password}");
+
             ResponseService<User> responseService = new ResponseService<User>();
-            responseService.IsSucess = response.IsSuccessStatusCode;
+            responseService.IsSuccess = response.IsSuccessStatusCode;
             responseService.StatusCode = (int)response.StatusCode;
+
             if (response.IsSuccessStatusCode)
             {
                 responseService.Data = await response.Content.ReadAsAsync<User>();
             }
             else
             {
-                var problemResponse = await response.Content.ReadAsStringAsync();
+                String problemResponse = await response.Content.ReadAsStringAsync();
                 var errors = JsonConvert.DeserializeObject<ResponseService<User>>(problemResponse);
+
                 responseService.Errors = errors.Errors;
             }
             return responseService;
         }
+
         public async Task<ResponseService<User>> AddUser(User user)
-        { 
+        {
             HttpResponseMessage response = await _client.PostAsJsonAsync($"{BaseApiUrl}/api/Users", user);
+
             ResponseService<User> responseService = new ResponseService<User>();
-            responseService.IsSucess = response.IsSuccessStatusCode;
+            responseService.IsSuccess = response.IsSuccessStatusCode;
             responseService.StatusCode = (int)response.StatusCode;
+
             if (response.IsSuccessStatusCode)
             {
                 responseService.Data = await response.Content.ReadAsAsync<User>();
             }
             else
             {
-                var problemResponse = await response.Content.ReadAsStringAsync();
+                String problemResponse = await response.Content.ReadAsStringAsync();
                 var errors = JsonConvert.DeserializeObject<ResponseService<User>>(problemResponse);
+
                 responseService.Errors = errors.Errors;
             }
+
             return responseService;
         }
     }

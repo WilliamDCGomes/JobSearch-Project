@@ -6,65 +6,75 @@
         <StackLayout Spacing="10">
             <Grid>
                 <Grid.ColumnDefinitions>
-                     <ColumnDefinition Width="50"/>
-                     <ColumnDefinition />
-                     <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="50" />
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="40" />
                 </Grid.RowDefinitions>
-                <ImageButton Clicked="GoBack" Style="{StaticResource BackButton}"/>
-                <Label Text="Jobsearch" Style="{StaticResource Title}" Grid.Column="1"/>
-                <ImageButton Clicked="Save" Style="{StaticResource OkButton}" Grid.Column="2"/>
+                <ImageButton Style="{StaticResource BackButton}" Clicked="GoBack"/>
+                <Label Text="Jobsearch" Style="{StaticResource Title}" Grid.Column="1" />
+                <ImageButton Style="{StaticResource OkButton}" Grid.Column="2" Clicked="Save"/>
             </Grid>
-
-            <BoxView HeightRequest="1" Color="#D7CCFF"/>
+            <BoxView Color="#D7CCFF" HeightRequest="1" />
             <ScrollView>
                 <StackLayout>
-                    <Label x:Name="TxtMessages" LineHeight="1.2" TextColor="OrangeRed" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    <Label x:Name="TxtMessages" LineHeight="1.2" TextColor="OrangeRed" />
 
-                    <Frame StyleClass="EntryFrame" Margin="0, 10, 10, 0">
-                        <Entry x:Name="TxtCompany" Placeholder="Empresa"/>
+                    <Frame StyleClass="EntryFrame" Margin="0, 10, 0, 0">
+                        <Entry x:Name="TxtCompany" Placeholder="Empresa" ReturnType="Next" />
                     </Frame>
+
                     <Frame StyleClass="EntryFrame">
-                        <Entry x:Name="TxtJobTitle" Placeholder="Cargo"/>
+                        <Entry x:Name="TxtJobTitle"  Placeholder="Cargo" ReturnType="Next" />
                     </Frame>
+
                     <Frame StyleClass="EntryFrame">
-                        <Entry x:Name="TxtCityState" Placeholder="Cidade/UF"/>
+                        <Entry x:Name="TxtCityState" Placeholder="Cidade/UF" ReturnType="Next" />
                     </Frame>
+
                     <Frame StyleClass="EntryFrame">
-                        <Entry x:Name="TxtInitialSalary" Keyboard="Numeric" Placeholder="Piso Salarial (reais)"/>
+                        <Entry x:Name="TxtInitialSalary" Keyboard="Numeric" ReturnType="Next" Placeholder="Salário inicial (reais)" />
                     </Frame>
+
                     <Frame StyleClass="EntryFrame">
-                        <Entry x:Name="TxtFinalSalary" Keyboard="Numeric" Placeholder="Teto Salarial (reais)"/>
+                        <Entry x:Name="TxtFinalSalary" Keyboard="Numeric" ReturnType="Next" Placeholder="Salário final (reais)" />
                     </Frame>
+
                     <Frame StyleClass="EntryFrame">
                         <StackLayout Orientation="Horizontal">
-                            <Label Text="Regime" HorizontalOptions="FillAndExpand" Style="{StaticResource LabelEntry}"/>
+                            <Label Text="Regime" HorizontalOptions="FillAndExpand" Style="{StaticResource LabelEntry}" />
                             <StackLayout Orientation="Horizontal" Spacing="0">
-                                <RadioButton x:Name="RBCLR" IsChecked="True"/>
+                                <RadioButton x:Name="RBCLT" IsChecked="True"/>
                                 <Label Text="CLT" Style="{StaticResource LabelRaddioButton}" VerticalTextAlignment="Center"/>
                             </StackLayout>
                             <StackLayout Orientation="Horizontal" Spacing="0">
                                 <RadioButton x:Name="RBPJ" Text="PJ"/>
                                 <Label Text="PJ" Style="{StaticResource LabelRaddioButton}" VerticalTextAlignment="Center"/>
                             </StackLayout>
-                        </StackLayout>
+                </StackLayout>
+
                     </Frame>
+
                     <Frame StyleClass="EntryFrame">
-                        <Entry x:Name="TxtTecnologyTools" Placeholder="Tecnologia/Ferramentas"/>
+                        <Entry x:Name="TxtTecnologyTools"  ReturnType="Next" Placeholder="Tecnologia/Ferramentas" />
                     </Frame>
+
                     <Frame StyleClass="EntryFrame">
-                        <Editor x:Name="TxtCompanyDescription" AutoSize="TextChanges" Placeholder="Descrição da Empresa"/>
+                        <Entry x:Name="TxtCompanyDescription"  ReturnType="Next" Placeholder="Descrição da Empresa" />
                     </Frame>
+
                     <Frame StyleClass="EntryFrame">
-                        <Editor x:Name="TxtJobDescription" AutoSize="TextChanges" Placeholder="Descrição do Trabalho"/>
+                        <Entry x:Name="TxtJobDescription"  ReturnType="Next" Placeholder="Descrição do Trabalho" />
                     </Frame>
+
                     <Frame StyleClass="EntryFrame">
-                        <Editor x:Name="TxtBenefits" AutoSize="TextChanges" Placeholder="Benefícios"/>
+                        <Entry x:Name="TxtBenefits"  ReturnType="Next" Placeholder="Benefícios" />
                     </Frame>
+
                     <Frame StyleClass="EntryFrame">
-                        <Entry x:Name="TxtInterestedSendEmailTo" Placeholder="Interessados enviar e-mail para"/>
+                        <Entry x:Name="TxtInterestedSendEmailTo"  ReturnType="Done" Placeholder="Interessados enviar e-mail para" />
                     </Frame>
                 </StackLayout>
             </ScrollView>

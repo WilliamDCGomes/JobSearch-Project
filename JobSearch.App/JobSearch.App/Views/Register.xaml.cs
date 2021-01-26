@@ -33,36 +33,44 @@ namespace JobSearch.App.Views
         private async void SaveAction(object sender, EventArgs e)
         {
             TxtMessages.Text = String.Empty;
-            string name = TxtNome.Text;
+
+            string name = TxtName.Text;
             string email = TxtEmail.Text;
             string password = TxtPassword.Text;
+
             User user = new User() { Nome = name, Email = email, Password = password };
+
             await Navigation.PushPopupAsync(new Loading());
             ResponseService<User> responseService = await _service.AddUser(user);
-            if (!responseService.IsSucess)
+            responseService.IsSuccess = true;
+            await DisplayAlert("Registro realizado!", "Registro criado com sucesso, clique em OK para continuar", "OK");
+            if (responseService.IsSuccess)
+            {
+                App.Current.Properties.Add("User", JsonConvert.SerializeObject(responseService.Data));
+                await App.Current.SavePropertiesAsync();
+                App.Current.MainPage = new NavigationPage(new Start());
+            }
+            else
             {
                 if (responseService.StatusCode == 400)
                 {
                     StringBuilder sb = new StringBuilder();
-                    foreach(var dicKey in responseService.Errors)
+
+                    foreach (var dicKey in responseService.Errors)
                     {
-                        foreach(var message in dicKey.Value)
+                        foreach (var message in dicKey.Value)
                         {
                             sb.AppendLine(message);
                         }
-                        TxtMessages.Text = sb.ToString();
                     }
+
+                    TxtMessages.Text = sb.ToString();
                 }
                 else
                 {
                     await DisplayAlert("Erro!", "Ops! JobSearch foi pras cucuias...", "OK");
                 }
-            }
-            else
-            {
-                App.Current.Properties.Add("User", JsonConvert.SerializeObject(responseService.Data));
-                await App.Current.SavePropertiesAsync();
-                App.Current.MainPage = new NavigationPage(new Start());
+
             }
             await Navigation.PopAllPopupAsync();
         }

@@ -48,6 +48,15 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "Microsoft.NETCore.Targets/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
       "Microsoft.NETCore.UniversalWindowsPlatform/6.2.10": {
         "type": "package",
         "dependencies": {
@@ -368,6 +377,18 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "System.ComponentModel/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netcore50/System.ComponentModel.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.ComponentModel.dll": {}
+        }
+      },
       "System.ComponentModel.Annotations/4.7.0": {
         "type": "package",
         "compile": {
@@ -375,6 +396,19 @@
         },
         "runtime": {
           "lib/netcore50/System.ComponentModel.Annotations.dll": {}
+        }
+      },
+      "System.Runtime/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0"
+        },
+        "compile": {
+          "ref/netcore50/System.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/win8/_._": {}
         }
       },
       "Win2D.uwp/1.20.0": {
@@ -435,6 +469,19 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.PancakeView/2.3.0.759": {
+        "type": "package",
+        "dependencies": {
+          "System.ComponentModel": "4.3.0",
+          "Xamarin.Forms": "4.8.0.1451"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll": {}
+        }
+      },
       "JobSearch.App/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -444,7 +491,8 @@
           "Newtonsoft.Json": "12.0.3",
           "Rg.Plugins.Popup": "1.2.0.223",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1451"
+          "Xamarin.Forms": "4.8.0.1451",
+          "Xamarin.Forms.PancakeView": "2.3.0.759"
         },
         "compile": {
           "bin/placeholder/JobSearch.App.dll": {}
@@ -506,6 +554,15 @@
         }
       },
       "Microsoft.NETCore.Platforms/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.NETCore.Targets/1.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -744,6 +801,18 @@
         "runtime": {
           "lib/uap10.0/Rg.Plugins.Popup.UWP.dll": {},
           "lib/uap10.0/Rg.Plugins.Popup.dll": {}
+        }
+      },
+      "runtime.any.System.Runtime/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Private.Uri": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard/_._": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Runtime.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.8-rel-28605-00": {
@@ -1013,6 +1082,27 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "runtime.win7.System.Private.Uri/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard/_._": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/netcore50/System.Private.Uri.dll": {}
+        }
+      },
+      "System.ComponentModel/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netcore50/System.ComponentModel.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.ComponentModel.dll": {}
+        }
+      },
       "System.ComponentModel.Annotations/4.7.0": {
         "type": "package",
         "compile": {
@@ -1020,6 +1110,31 @@
         },
         "runtime": {
           "lib/netcore50/System.ComponentModel.Annotations.dll": {}
+        }
+      },
+      "System.Private.Uri/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "runtime.win7.System.Private.Uri": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard/_._": {}
+        }
+      },
+      "System.Runtime/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "runtime.any.System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netcore50/System.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/win8/_._": {}
         }
       },
       "Win2D.uwp/1.20.0": {
@@ -1069,6 +1184,19 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.PancakeView/2.3.0.759": {
+        "type": "package",
+        "dependencies": {
+          "System.ComponentModel": "4.3.0",
+          "Xamarin.Forms": "4.8.0.1451"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll": {}
+        }
+      },
       "JobSearch.App/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1078,7 +1206,8 @@
           "Newtonsoft.Json": "12.0.3",
           "Rg.Plugins.Popup": "1.2.0.223",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1451"
+          "Xamarin.Forms": "4.8.0.1451",
+          "Xamarin.Forms.PancakeView": "2.3.0.759"
         },
         "compile": {
           "bin/placeholder/JobSearch.App.dll": {}
@@ -1140,6 +1269,15 @@
         }
       },
       "Microsoft.NETCore.Platforms/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.NETCore.Targets/1.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -1378,6 +1516,18 @@
         "runtime": {
           "lib/uap10.0/Rg.Plugins.Popup.UWP.dll": {},
           "lib/uap10.0/Rg.Plugins.Popup.dll": {}
+        }
+      },
+      "runtime.aot.System.Runtime/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Private.Uri": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard/_._": {}
+        },
+        "runtime": {
+          "runtimes/aot/lib/netcore50/System.Runtime.dll": {}
         }
       },
       "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.2.10": {
@@ -1648,6 +1798,27 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "runtime.win7.System.Private.Uri/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard/_._": {}
+        },
+        "runtime": {
+          "runtimes/aot/lib/netcore50/System.Private.Uri.dll": {}
+        }
+      },
+      "System.ComponentModel/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netcore50/System.ComponentModel.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.ComponentModel.dll": {}
+        }
+      },
       "System.ComponentModel.Annotations/4.7.0": {
         "type": "package",
         "compile": {
@@ -1655,6 +1826,31 @@
         },
         "runtime": {
           "lib/netcore50/System.ComponentModel.Annotations.dll": {}
+        }
+      },
+      "System.Private.Uri/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "runtime.win7.System.Private.Uri": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard/_._": {}
+        }
+      },
+      "System.Runtime/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "runtime.aot.System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netcore50/System.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/win8/_._": {}
         }
       },
       "Win2D.uwp/1.20.0": {
@@ -1704,6 +1900,19 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.PancakeView/2.3.0.759": {
+        "type": "package",
+        "dependencies": {
+          "System.ComponentModel": "4.3.0",
+          "Xamarin.Forms": "4.8.0.1451"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll": {}
+        }
+      },
       "JobSearch.App/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1713,7 +1922,8 @@
           "Newtonsoft.Json": "12.0.3",
           "Rg.Plugins.Popup": "1.2.0.223",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1451"
+          "Xamarin.Forms": "4.8.0.1451",
+          "Xamarin.Forms.PancakeView": "2.3.0.759"
         },
         "compile": {
           "bin/placeholder/JobSearch.App.dll": {}
@@ -1775,6 +1985,15 @@
         }
       },
       "Microsoft.NETCore.Platforms/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.NETCore.Targets/1.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -2013,6 +2232,18 @@
         "runtime": {
           "lib/uap10.0/Rg.Plugins.Popup.UWP.dll": {},
           "lib/uap10.0/Rg.Plugins.Popup.dll": {}
+        }
+      },
+      "runtime.aot.System.Runtime/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Private.Uri": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard/_._": {}
+        },
+        "runtime": {
+          "runtimes/aot/lib/netcore50/System.Runtime.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.8-rel-28605-00": {
@@ -2283,6 +2514,27 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "runtime.win7.System.Private.Uri/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard/_._": {}
+        },
+        "runtime": {
+          "runtimes/aot/lib/netcore50/System.Private.Uri.dll": {}
+        }
+      },
+      "System.ComponentModel/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netcore50/System.ComponentModel.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.ComponentModel.dll": {}
+        }
+      },
       "System.ComponentModel.Annotations/4.7.0": {
         "type": "package",
         "compile": {
@@ -2290,6 +2542,31 @@
         },
         "runtime": {
           "lib/netcore50/System.ComponentModel.Annotations.dll": {}
+        }
+      },
+      "System.Private.Uri/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "runtime.win7.System.Private.Uri": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard/_._": {}
+        }
+      },
+      "System.Runtime/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "runtime.aot.System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netcore50/System.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/win8/_._": {}
         }
       },
       "Win2D.uwp/1.20.0": {
@@ -2336,6 +2613,19 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.PancakeView/2.3.0.759": {
+        "type": "package",
+        "dependencies": {
+          "System.ComponentModel": "4.3.0",
+          "Xamarin.Forms": "4.8.0.1451"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll": {}
+        }
+      },
       "JobSearch.App/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -2345,7 +2635,8 @@
           "Newtonsoft.Json": "12.0.3",
           "Rg.Plugins.Popup": "1.2.0.223",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1451"
+          "Xamarin.Forms": "4.8.0.1451",
+          "Xamarin.Forms.PancakeView": "2.3.0.759"
         },
         "compile": {
           "bin/placeholder/JobSearch.App.dll": {}
@@ -2407,6 +2698,15 @@
         }
       },
       "Microsoft.NETCore.Platforms/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.NETCore.Targets/1.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -2645,6 +2945,18 @@
         "runtime": {
           "lib/uap10.0/Rg.Plugins.Popup.UWP.dll": {},
           "lib/uap10.0/Rg.Plugins.Popup.dll": {}
+        }
+      },
+      "runtime.any.System.Runtime/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Private.Uri": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard/_._": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Runtime.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.8-rel-28605-00": {
@@ -2914,6 +3226,27 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "runtime.win7.System.Private.Uri/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard/_._": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/netcore50/System.Private.Uri.dll": {}
+        }
+      },
+      "System.ComponentModel/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netcore50/System.ComponentModel.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.ComponentModel.dll": {}
+        }
+      },
       "System.ComponentModel.Annotations/4.7.0": {
         "type": "package",
         "compile": {
@@ -2921,6 +3254,31 @@
         },
         "runtime": {
           "lib/netcore50/System.ComponentModel.Annotations.dll": {}
+        }
+      },
+      "System.Private.Uri/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "runtime.win7.System.Private.Uri": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard/_._": {}
+        }
+      },
+      "System.Runtime/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "runtime.any.System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netcore50/System.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/win8/_._": {}
         }
       },
       "Win2D.uwp/1.20.0": {
@@ -2970,6 +3328,19 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.PancakeView/2.3.0.759": {
+        "type": "package",
+        "dependencies": {
+          "System.ComponentModel": "4.3.0",
+          "Xamarin.Forms": "4.8.0.1451"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll": {}
+        }
+      },
       "JobSearch.App/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -2979,7 +3350,8 @@
           "Newtonsoft.Json": "12.0.3",
           "Rg.Plugins.Popup": "1.2.0.223",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1451"
+          "Xamarin.Forms": "4.8.0.1451",
+          "Xamarin.Forms.PancakeView": "2.3.0.759"
         },
         "compile": {
           "bin/placeholder/JobSearch.App.dll": {}
@@ -3041,6 +3413,15 @@
         }
       },
       "Microsoft.NETCore.Platforms/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.NETCore.Targets/1.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -3279,6 +3660,18 @@
         "runtime": {
           "lib/uap10.0/Rg.Plugins.Popup.UWP.dll": {},
           "lib/uap10.0/Rg.Plugins.Popup.dll": {}
+        }
+      },
+      "runtime.aot.System.Runtime/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Private.Uri": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard/_._": {}
+        },
+        "runtime": {
+          "runtimes/aot/lib/netcore50/System.Runtime.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.8-rel-28605-00": {
@@ -3549,6 +3942,27 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "runtime.win7.System.Private.Uri/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard/_._": {}
+        },
+        "runtime": {
+          "runtimes/aot/lib/netcore50/System.Private.Uri.dll": {}
+        }
+      },
+      "System.ComponentModel/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netcore50/System.ComponentModel.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.ComponentModel.dll": {}
+        }
+      },
       "System.ComponentModel.Annotations/4.7.0": {
         "type": "package",
         "compile": {
@@ -3556,6 +3970,31 @@
         },
         "runtime": {
           "lib/netcore50/System.ComponentModel.Annotations.dll": {}
+        }
+      },
+      "System.Private.Uri/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "runtime.win7.System.Private.Uri": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard/_._": {}
+        }
+      },
+      "System.Runtime/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "runtime.aot.System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netcore50/System.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/win8/_._": {}
         }
       },
       "Win2D.uwp/1.20.0": {
@@ -3605,6 +4044,19 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.PancakeView/2.3.0.759": {
+        "type": "package",
+        "dependencies": {
+          "System.ComponentModel": "4.3.0",
+          "Xamarin.Forms": "4.8.0.1451"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll": {}
+        }
+      },
       "JobSearch.App/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -3614,7 +4066,8 @@
           "Newtonsoft.Json": "12.0.3",
           "Rg.Plugins.Popup": "1.2.0.223",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1451"
+          "Xamarin.Forms": "4.8.0.1451",
+          "Xamarin.Forms.PancakeView": "2.3.0.759"
         },
         "compile": {
           "bin/placeholder/JobSearch.App.dll": {}
@@ -3676,6 +4129,15 @@
         }
       },
       "Microsoft.NETCore.Platforms/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.NETCore.Targets/1.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -3914,6 +4376,18 @@
         "runtime": {
           "lib/uap10.0/Rg.Plugins.Popup.UWP.dll": {},
           "lib/uap10.0/Rg.Plugins.Popup.dll": {}
+        }
+      },
+      "runtime.any.System.Runtime/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Private.Uri": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard/_._": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Runtime.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.8-rel-28605-00": {
@@ -4183,6 +4657,27 @@
           "runtimes/win10-x86/nativeassets/uap10.0.15138/clrcompression.dll": {}
         }
       },
+      "runtime.win7.System.Private.Uri/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard/_._": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/netcore50/System.Private.Uri.dll": {}
+        }
+      },
+      "System.ComponentModel/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netcore50/System.ComponentModel.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.ComponentModel.dll": {}
+        }
+      },
       "System.ComponentModel.Annotations/4.7.0": {
         "type": "package",
         "compile": {
@@ -4190,6 +4685,31 @@
         },
         "runtime": {
           "lib/netcore50/System.ComponentModel.Annotations.dll": {}
+        }
+      },
+      "System.Private.Uri/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "runtime.win7.System.Private.Uri": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard/_._": {}
+        }
+      },
+      "System.Runtime/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "runtime.any.System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netcore50/System.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/win8/_._": {}
         }
       },
       "Win2D.uwp/1.20.0": {
@@ -4239,6 +4759,19 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.PancakeView/2.3.0.759": {
+        "type": "package",
+        "dependencies": {
+          "System.ComponentModel": "4.3.0",
+          "Xamarin.Forms": "4.8.0.1451"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll": {}
+        }
+      },
       "JobSearch.App/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -4248,7 +4781,8 @@
           "Newtonsoft.Json": "12.0.3",
           "Rg.Plugins.Popup": "1.2.0.223",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1451"
+          "Xamarin.Forms": "4.8.0.1451",
+          "Xamarin.Forms.PancakeView": "2.3.0.759"
         },
         "compile": {
           "bin/placeholder/JobSearch.App.dll": {}
@@ -4310,6 +4844,15 @@
         }
       },
       "Microsoft.NETCore.Platforms/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.NETCore.Targets/1.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -4548,6 +5091,18 @@
         "runtime": {
           "lib/uap10.0/Rg.Plugins.Popup.UWP.dll": {},
           "lib/uap10.0/Rg.Plugins.Popup.dll": {}
+        }
+      },
+      "runtime.aot.System.Runtime/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Private.Uri": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard/_._": {}
+        },
+        "runtime": {
+          "runtimes/aot/lib/netcore50/System.Runtime.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.8-rel-28605-00": {
@@ -4818,6 +5373,27 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
       },
+      "runtime.win7.System.Private.Uri/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard/_._": {}
+        },
+        "runtime": {
+          "runtimes/aot/lib/netcore50/System.Private.Uri.dll": {}
+        }
+      },
+      "System.ComponentModel/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netcore50/System.ComponentModel.dll": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.ComponentModel.dll": {}
+        }
+      },
       "System.ComponentModel.Annotations/4.7.0": {
         "type": "package",
         "compile": {
@@ -4825,6 +5401,31 @@
         },
         "runtime": {
           "lib/netcore50/System.ComponentModel.Annotations.dll": {}
+        }
+      },
+      "System.Private.Uri/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "runtime.win7.System.Private.Uri": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard/_._": {}
+        }
+      },
+      "System.Runtime/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "runtime.aot.System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netcore50/System.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/win8/_._": {}
         }
       },
       "Win2D.uwp/1.20.0": {
@@ -4874,6 +5475,19 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.PancakeView/2.3.0.759": {
+        "type": "package",
+        "dependencies": {
+          "System.ComponentModel": "4.3.0",
+          "Xamarin.Forms": "4.8.0.1451"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll": {}
+        }
+      },
       "JobSearch.App/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -4883,7 +5497,8 @@
           "Newtonsoft.Json": "12.0.3",
           "Rg.Plugins.Popup": "1.2.0.223",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1451"
+          "Xamarin.Forms": "4.8.0.1451",
+          "Xamarin.Forms.PancakeView": "2.3.0.759"
         },
         "compile": {
           "bin/placeholder/JobSearch.App.dll": {}
@@ -5013,6 +5628,21 @@
         "runtime.json",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Microsoft.NETCore.Targets/1.1.0": {
+      "sha512": "aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
+      "type": "package",
+      "path": "microsoft.netcore.targets/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/netstandard1.0/_._",
+        "microsoft.netcore.targets.1.1.0.nupkg.sha512",
+        "microsoft.netcore.targets.nuspec",
+        "runtime.json"
       ]
     },
     "Microsoft.NETCore.UniversalWindowsPlatform/6.2.10": {
@@ -5540,6 +6170,48 @@
         "readme.txt",
         "rg.plugins.popup.1.2.0.223.nupkg.sha512",
         "rg.plugins.popup.nuspec"
+      ]
+    },
+    "runtime.any.System.Runtime/4.3.0": {
+      "sha512": "fRS7zJgaG9NkifaAxGGclDDoRn9HC7hXACl52Or06a/fxdzDajWb5wov3c6a+gVSlekRoexfjwQSK9sh5um5LQ==",
+      "type": "package",
+      "path": "runtime.any.system.runtime/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/System.Runtime.dll",
+        "lib/netstandard1.5/System.Runtime.dll",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/netstandard/_._",
+        "runtime.any.system.runtime.4.3.0.nupkg.sha512",
+        "runtime.any.system.runtime.nuspec",
+        "runtimes/aot/lib/netcore50/_._"
+      ]
+    },
+    "runtime.aot.System.Runtime/4.3.0": {
+      "sha512": "+v3ECNS5te29NRB7qhY2Ea3KKK1ACWEoGRcicbXm79HqFi7eL0IuqPpCpv43MMVUWxGcnrP8+PdktB2c2P0L0w==",
+      "type": "package",
+      "path": "runtime.aot.system.runtime/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "ref/netstandard/_._",
+        "runtime.aot.system.runtime.4.3.0.nupkg.sha512",
+        "runtime.aot.system.runtime.nuspec",
+        "runtimes/aot/lib/netcore50/System.Runtime.dll"
       ]
     },
     "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.2.10": {
@@ -9460,6 +10132,82 @@
         "runtimes/win10-x86/nativeassets/uap10.0.15138/clrcompression.dll"
       ]
     },
+    "runtime.win7.System.Private.Uri/4.3.0": {
+      "sha512": "Q+IBgaPYicSQs2tBlmXqbS25c/JLIthWrgrpMwxKSOobW/OqIMVFruUGfuaz4QABVzV8iKdCAbN7APY7Tclbnw==",
+      "type": "package",
+      "path": "runtime.win7.system.private.uri/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "ref/netstandard/_._",
+        "runtime.win7.system.private.uri.4.3.0.nupkg.sha512",
+        "runtime.win7.system.private.uri.nuspec",
+        "runtimes/aot/lib/netcore50/System.Private.Uri.dll",
+        "runtimes/win/lib/netcore50/System.Private.Uri.dll",
+        "runtimes/win/lib/netstandard1.0/System.Private.Uri.dll"
+      ]
+    },
+    "System.ComponentModel/4.3.0": {
+      "sha512": "VyGn1jGRZVfxnh8EdvDCi71v3bMXrsu8aYJOwoV7SNDLVhiEqwP86pPMyRGsDsxhXAm2b3o9OIqeETfN5qfezw==",
+      "type": "package",
+      "path": "system.componentmodel/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/System.ComponentModel.dll",
+        "lib/netstandard1.3/System.ComponentModel.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/System.ComponentModel.dll",
+        "ref/netcore50/System.ComponentModel.xml",
+        "ref/netcore50/de/System.ComponentModel.xml",
+        "ref/netcore50/es/System.ComponentModel.xml",
+        "ref/netcore50/fr/System.ComponentModel.xml",
+        "ref/netcore50/it/System.ComponentModel.xml",
+        "ref/netcore50/ja/System.ComponentModel.xml",
+        "ref/netcore50/ko/System.ComponentModel.xml",
+        "ref/netcore50/ru/System.ComponentModel.xml",
+        "ref/netcore50/zh-hans/System.ComponentModel.xml",
+        "ref/netcore50/zh-hant/System.ComponentModel.xml",
+        "ref/netstandard1.0/System.ComponentModel.dll",
+        "ref/netstandard1.0/System.ComponentModel.xml",
+        "ref/netstandard1.0/de/System.ComponentModel.xml",
+        "ref/netstandard1.0/es/System.ComponentModel.xml",
+        "ref/netstandard1.0/fr/System.ComponentModel.xml",
+        "ref/netstandard1.0/it/System.ComponentModel.xml",
+        "ref/netstandard1.0/ja/System.ComponentModel.xml",
+        "ref/netstandard1.0/ko/System.ComponentModel.xml",
+        "ref/netstandard1.0/ru/System.ComponentModel.xml",
+        "ref/netstandard1.0/zh-hans/System.ComponentModel.xml",
+        "ref/netstandard1.0/zh-hant/System.ComponentModel.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.componentmodel.4.3.0.nupkg.sha512",
+        "system.componentmodel.nuspec"
+      ]
+    },
     "System.ComponentModel.Annotations/4.7.0": {
       "sha512": "0YFqjhp/mYkDGpU0Ye1GjE53HMp9UVfGN7seGpAMttAC0C40v5gw598jCgpbBLMmCo0E5YRLBv5Z2doypO49ZQ==",
       "type": "package",
@@ -9547,6 +10295,112 @@
         "system.componentmodel.annotations.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "System.Private.Uri/4.3.0": {
+      "sha512": "I4SwANiUGho1esj4V4oSlPllXjzCZDE+5XXso2P03LW2vOda2Enzh8DWOxwN6hnrJyp314c7KuVu31QYhRzOGg==",
+      "type": "package",
+      "path": "system.private.uri/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "ref/netstandard/_._",
+        "system.private.uri.4.3.0.nupkg.sha512",
+        "system.private.uri.nuspec"
+      ]
+    },
+    "System.Runtime/4.3.0": {
+      "sha512": "JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
+      "type": "package",
+      "path": "system.runtime/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/net462/System.Runtime.dll",
+        "lib/portable-net45+win8+wp80+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/net462/System.Runtime.dll",
+        "ref/netcore50/System.Runtime.dll",
+        "ref/netcore50/System.Runtime.xml",
+        "ref/netcore50/de/System.Runtime.xml",
+        "ref/netcore50/es/System.Runtime.xml",
+        "ref/netcore50/fr/System.Runtime.xml",
+        "ref/netcore50/it/System.Runtime.xml",
+        "ref/netcore50/ja/System.Runtime.xml",
+        "ref/netcore50/ko/System.Runtime.xml",
+        "ref/netcore50/ru/System.Runtime.xml",
+        "ref/netcore50/zh-hans/System.Runtime.xml",
+        "ref/netcore50/zh-hant/System.Runtime.xml",
+        "ref/netstandard1.0/System.Runtime.dll",
+        "ref/netstandard1.0/System.Runtime.xml",
+        "ref/netstandard1.0/de/System.Runtime.xml",
+        "ref/netstandard1.0/es/System.Runtime.xml",
+        "ref/netstandard1.0/fr/System.Runtime.xml",
+        "ref/netstandard1.0/it/System.Runtime.xml",
+        "ref/netstandard1.0/ja/System.Runtime.xml",
+        "ref/netstandard1.0/ko/System.Runtime.xml",
+        "ref/netstandard1.0/ru/System.Runtime.xml",
+        "ref/netstandard1.0/zh-hans/System.Runtime.xml",
+        "ref/netstandard1.0/zh-hant/System.Runtime.xml",
+        "ref/netstandard1.2/System.Runtime.dll",
+        "ref/netstandard1.2/System.Runtime.xml",
+        "ref/netstandard1.2/de/System.Runtime.xml",
+        "ref/netstandard1.2/es/System.Runtime.xml",
+        "ref/netstandard1.2/fr/System.Runtime.xml",
+        "ref/netstandard1.2/it/System.Runtime.xml",
+        "ref/netstandard1.2/ja/System.Runtime.xml",
+        "ref/netstandard1.2/ko/System.Runtime.xml",
+        "ref/netstandard1.2/ru/System.Runtime.xml",
+        "ref/netstandard1.2/zh-hans/System.Runtime.xml",
+        "ref/netstandard1.2/zh-hant/System.Runtime.xml",
+        "ref/netstandard1.3/System.Runtime.dll",
+        "ref/netstandard1.3/System.Runtime.xml",
+        "ref/netstandard1.3/de/System.Runtime.xml",
+        "ref/netstandard1.3/es/System.Runtime.xml",
+        "ref/netstandard1.3/fr/System.Runtime.xml",
+        "ref/netstandard1.3/it/System.Runtime.xml",
+        "ref/netstandard1.3/ja/System.Runtime.xml",
+        "ref/netstandard1.3/ko/System.Runtime.xml",
+        "ref/netstandard1.3/ru/System.Runtime.xml",
+        "ref/netstandard1.3/zh-hans/System.Runtime.xml",
+        "ref/netstandard1.3/zh-hant/System.Runtime.xml",
+        "ref/netstandard1.5/System.Runtime.dll",
+        "ref/netstandard1.5/System.Runtime.xml",
+        "ref/netstandard1.5/de/System.Runtime.xml",
+        "ref/netstandard1.5/es/System.Runtime.xml",
+        "ref/netstandard1.5/fr/System.Runtime.xml",
+        "ref/netstandard1.5/it/System.Runtime.xml",
+        "ref/netstandard1.5/ja/System.Runtime.xml",
+        "ref/netstandard1.5/ko/System.Runtime.xml",
+        "ref/netstandard1.5/ru/System.Runtime.xml",
+        "ref/netstandard1.5/zh-hans/System.Runtime.xml",
+        "ref/netstandard1.5/zh-hant/System.Runtime.xml",
+        "ref/portable-net45+win8+wp80+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.runtime.4.3.0.nupkg.sha512",
+        "system.runtime.nuspec"
       ]
     },
     "Win2D.uwp/1.20.0": {
@@ -9933,6 +10787,42 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Xamarin.Forms.PancakeView/2.3.0.759": {
+      "sha512": "TGVsLJuGd/PKlyhmcBxZnHhHqyhYppzyrdb2q/sy+S6dQYkeGM8A+HmIIHVhbi7r8Sjasa/HRBkOmTSYQOZzhQ==",
+      "type": "package",
+      "path": "xamarin.forms.pancakeview/2.3.0.759",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid10.0/Xamarin.Forms.PancakeView.dll",
+        "lib/monoandroid10.0/Xamarin.Forms.PancakeView.xml",
+        "lib/monoandroid90/Xamarin.Forms.PancakeView.dll",
+        "lib/monoandroid90/Xamarin.Forms.PancakeView.xml",
+        "lib/net471/Xamarin.Forms.PancakeView.dll",
+        "lib/net471/Xamarin.Forms.PancakeView.xml",
+        "lib/net472/Xamarin.Forms.PancakeView.dll",
+        "lib/net472/Xamarin.Forms.PancakeView.xml",
+        "lib/netcoreapp3.1/Xamarin.Forms.PancakeView.dll",
+        "lib/netcoreapp3.1/Xamarin.Forms.PancakeView.xml",
+        "lib/netstandard1.0/Xamarin.Forms.PancakeView.dll",
+        "lib/netstandard1.0/Xamarin.Forms.PancakeView.xml",
+        "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll",
+        "lib/netstandard2.0/Xamarin.Forms.PancakeView.xml",
+        "lib/netstandard2.1/Xamarin.Forms.PancakeView.dll",
+        "lib/netstandard2.1/Xamarin.Forms.PancakeView.xml",
+        "lib/tizen40/Xamarin.Forms.PancakeView.dll",
+        "lib/tizen40/Xamarin.Forms.PancakeView.xml",
+        "lib/uap10.0.17763/Xamarin.Forms.PancakeView.dll",
+        "lib/uap10.0.17763/Xamarin.Forms.PancakeView.pri",
+        "lib/uap10.0.17763/Xamarin.Forms.PancakeView.xml",
+        "lib/xamarinios10/Xamarin.Forms.PancakeView.dll",
+        "lib/xamarinios10/Xamarin.Forms.PancakeView.xml",
+        "lib/xamarinmac20/Xamarin.Forms.PancakeView.dll",
+        "lib/xamarinmac20/Xamarin.Forms.PancakeView.xml",
+        "xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512",
+        "xamarin.forms.pancakeview.nuspec"
+      ]
+    },
     "JobSearch.App/1.0.0": {
       "type": "project",
       "path": "../JobSearch.App/JobSearch.App.csproj",
@@ -9949,7 +10839,8 @@
       "JobSearch.App >= 1.0.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.10",
       "Xamarin.Essentials >= 1.5.3.2",
-      "Xamarin.Forms >= 4.8.0.1451"
+      "Xamarin.Forms >= 4.8.0.1451",
+      "Xamarin.Forms.PancakeView >= 2.3.0.759"
     ]
   },
   "packageFolders": {
@@ -10007,6 +10898,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[4.8.0.1451, )"
+          },
+          "Xamarin.Forms.PancakeView": {
+            "target": "Package",
+            "version": "[2.3.0.759, )"
           }
         },
         "imports": [

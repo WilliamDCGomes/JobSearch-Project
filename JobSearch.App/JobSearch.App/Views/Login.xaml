@@ -4,8 +4,9 @@
              x:Class="JobSearch.App.Views.Login">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Jobsearch" Style="{StaticResource Title}"/>
-            <BoxView HeightRequest="1" Color="#D7CCFF"/>
+            <Label Text="Jobsearch" Style="{StaticResource Title}" />
+            <BoxView Color="#D7CCFF" HeightRequest="1" />
+
             <Grid VerticalOptions="CenterAndExpand">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
@@ -16,14 +17,14 @@
                     <RowDefinition />
                     <RowDefinition />
                 </Grid.RowDefinitions>
-                <Frame StyleClass="EntryFrame" Grid.Row="0" Grid.ColumnSpan="2">
-                    <Entry x:Name="Email" Placeholder="E-mail"/>
+                <Frame StyleClass="EntryFrame" Grid.Row="0" Grid.ColumnSpan="2" >
+                    <Entry x:Name="TxtEmail" Placeholder="E-mail" ReturnType="Next" />
                 </Frame>
                 <Frame StyleClass="EntryFrame" Grid.Row="1" Grid.ColumnSpan="2">
-                    <Entry x:Name="Password" IsPassword="True" Placeholder="Senha"/>
+                    <Entry IsPassword="True" x:Name="TxtPassword" ReturnType="Done" Placeholder="Senha" />
                 </Frame>
-                <Button Text="Acessar" Clicked="GoStart" HorizontalOptions="FillAndExpand" Grid.Row="2" Grid.Column="0"/>
-                <Button Text="Cadastrar" Clicked="GoRegister" HorizontalOptions="FillAndExpand" Grid.Row="2" Grid.Column="1"/>
+                <Button Text="Acessar" Clicked="GoStart" Grid.Row="2" />
+                <Button Text="Cadastrar" Clicked="GoRegister" Grid.Row="2" Grid.Column="1" />
             </Grid>
         </StackLayout>
     </ContentPage.Content>

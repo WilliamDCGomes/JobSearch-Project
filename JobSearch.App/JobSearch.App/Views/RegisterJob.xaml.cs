@@ -78,5 +78,23 @@ namespace JobSearch.App.Views
                 await Navigation.PopAllPopupAsync();
             }
         }
+
+        private void SelectRBCLT(object sender, EventArgs e)
+        {
+            if (RBPJ.IsChecked)
+            {
+                RBPJ.IsChecked = false;
+                RBCLT.IsChecked = true;
+            }
+        }
+
+        private void SelectRBPJ(object sender, EventArgs e)
+        {
+            if (RBCLT.IsChecked)
+            {
+                RBCLT.IsChecked = false;
+                RBPJ.IsChecked = true;
+            }
+        }
     }
 }

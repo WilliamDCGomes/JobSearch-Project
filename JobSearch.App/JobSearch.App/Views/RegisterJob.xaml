@@ -46,12 +46,20 @@
                         <StackLayout Orientation="Horizontal">
                             <Label Text="Regime" HorizontalOptions="FillAndExpand" Style="{StaticResource LabelEntry}" />
                             <StackLayout Orientation="Horizontal" Spacing="0">
-                                <RadioButton x:Name="RBCLT" IsChecked="True"/>
-                                <Label Text="CLT" Style="{StaticResource LabelRaddioButton}" VerticalTextAlignment="Center"/>
+                                <RadioButton GroupName="RadioButtonGroup" x:Name="RBCLT" IsChecked="True"/>
+                                <Label Text="CLT" Style="{StaticResource LabelRaddioButton}" VerticalTextAlignment="Center">
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="SelectRBCLT" />
+                                    </Label.GestureRecognizers>
+                                </Label>
                             </StackLayout>
                             <StackLayout Orientation="Horizontal" Spacing="0">
-                                <RadioButton x:Name="RBPJ" Text="PJ"/>
-                                <Label Text="PJ" Style="{StaticResource LabelRaddioButton}" VerticalTextAlignment="Center"/>
+                                <RadioButton GroupName="RadioButtonGroup" x:Name="RBPJ" Text="PJ"/>
+                                <Label Text="PJ" Style="{StaticResource LabelRaddioButton}" VerticalTextAlignment="Center">
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="SelectRBPJ" />
+                                    </Label.GestureRecognizers>
+                                </Label>
                             </StackLayout>
                 </StackLayout>
 
